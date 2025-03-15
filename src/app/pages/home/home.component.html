@@ -126,19 +126,19 @@
       font-weight: 500;
       color: #2c3e50;
     }</style>
+
 <div class="container">
     <div class="sidebar">
       <div class="sidebar-header">
         <h1>QuiriClima 7w7</h1>
-        <p>Marzo de 2025</p>
-        <p>Thursday, Dec 10, 2024</p>
+        <p>{{ clima.location.localtime | date }}</p>
       </div>
       <div class="sidebar-menu">
         <ul>
           <li><i class="fas fa-tachometer-alt"></i> Dashboard</li>
           <li><i class="fas fa-map"></i> Maps</li>
-          <li><i class="fas fa-wind"></i> Wind Speed <span>25km/h</span></li>
-          <li><i class="fas fa-cloud-rain"></i> Rain Chance <span>30%</span></li>
+          <li><i class="fas fa-wind"></i> Wind Speed <span>{{ clima.current.wind_speed }} km/h</span></li>
+          <li><i class="fas fa-cloud-rain"></i> Rain Chance <span>{{ clima.current.precip }}%</span></li>
         </ul>
       </div>
       <div class="sidebar-footer">
@@ -149,13 +149,14 @@
         </ul>
       </div>
     </div>
+
     <div class="main-content">
       <div class="weather-info">
-        <h2>Metro Pusat, Lampung, Indonesia</h2>
-        <p>09:45 AM</p>
+        <h2>>{{ clima.location.name }}, {{ clima.location.region }}, {{ clima.location.country }}</h2>
+        <p>{{ clima.location.localtime | date:'shortTime' }}</p>
         <div class="weather-details">
-          <p class="temperature">25° C</p>
-          <p class="weather-condition">Dramatic Clouds</p>
+          <p class="temperature">{{ clima.current.temperature }}° C</p>
+          <p class="weather-condition">{{ clima.current.weather_descriptions[0] }}</p>
         </div>
         <div class="chance-of-rain">
           <p>Chance Of Rain</p>

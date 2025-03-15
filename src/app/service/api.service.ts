@@ -7,8 +7,8 @@ import { Injectable } from '@angular/core';
 })
 export class ApiService {
   constructor(private http: HttpClient) { }// Inject HttpClient
-  getData(){
-    return this.http.get<ApiService>("https://api.weatherstack.com/current?access_key=ff3dbbd040c06028f2fd35ee986d5fdc&query=Guadalupe%20Victoria%20Durango")// Get data from API
+  getData(location: string){
+    return this.http.get<ApiService>('https://api.weatherstack.com/current?access_key=ff3dbbd040c06028f2fd35ee986d5fdc&query=${location}')// Get data from API
   }
 
 

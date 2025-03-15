@@ -1,10 +1,10 @@
-interface ClimaResult {
+export interface ClimaResult {
   request: Request;
   location: Location;
   current: Current;
 }
 
-interface Current {
+export interface Current {
   observation_time: string;
   temperature: number;
   weather_code: number;
@@ -23,7 +23,7 @@ interface Current {
   is_day: string;
 }
 
-interface Location {
+export interface Location {
   name: string;
   country: string;
   region: string;
@@ -35,7 +35,7 @@ interface Location {
   utc_offset: string;
 }
 
-interface Request {
+export interface Request {
   type: string;
   query: string;
   language: string;
