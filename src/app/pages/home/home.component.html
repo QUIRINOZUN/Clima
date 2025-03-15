@@ -1,0 +1,180 @@
+<style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      height: 100vh;
+      background-color: #f0f2f5;
+    }
+    
+    .container {
+      display: flex;
+      width: 100%;
+    }
+    
+    .sidebar {
+      width: 250px;
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .sidebar-header h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 600;
+    }
+    
+    .sidebar-header p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #bdc3c7;
+    }
+    
+    .sidebar-menu ul, .sidebar-footer ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .sidebar-menu li, .sidebar-footer li {
+      margin: 15px 0;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .sidebar-menu li i, .sidebar-footer li i {
+      margin-right: 10px;
+      width: 20px;
+      text-align: center;
+    }
+    
+    .sidebar-menu span, .sidebar-footer span {
+      margin-left: auto;
+    }
+    
+    .main-content {
+      flex-grow: 1;
+      padding: 20px;
+    }
+    
+    .weather-info {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .weather-info h2 {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 500;
+    }
+    
+    .weather-info p {
+      margin: 5px 0;
+      font-size: 16px;
+      color: #7f8c8d;
+    }
+    
+    .weather-details {
+      margin: 20px 0;
+      text-align: center;
+    }
+    
+    .weather-details .temperature {
+      font-size: 48px;
+      font-weight: 600;
+      color: #2c3e50;
+    }
+    
+    .weather-details .weather-condition {
+      font-size: 20px;
+      color: #7f8c8d;
+    }
+    
+    .chance-of-rain, .sunrise-sunset {
+      margin: 20px 0;
+    }
+    
+    .chance-of-rain p, .sunrise-sunset p {
+      font-size: 18px;
+      font-weight: 500;
+      color: #2c3e50;
+    }
+    
+    .chance-of-rain ul, .sunrise-sunset ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .chance-of-rain li, .sunrise-sunset li {
+      margin: 10px 0;
+      font-size: 16px;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: #f8f9fa;
+      border-radius: 8px;
+    }
+    
+    .chance-of-rain li span, .sunrise-sunset li span {
+      font-weight: 500;
+      color: #2c3e50;
+    }</style>
+<div class="container">
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <h1>QuiriClima 7w7</h1>
+        <p>Marzo de 2025</p>
+        <p>Thursday, Dec 10, 2024</p>
+      </div>
+      <div class="sidebar-menu">
+        <ul>
+          <li><i class="fas fa-tachometer-alt"></i> Dashboard</li>
+          <li><i class="fas fa-map"></i> Maps</li>
+          <li><i class="fas fa-wind"></i> Wind Speed <span>25km/h</span></li>
+          <li><i class="fas fa-cloud-rain"></i> Rain Chance <span>30%</span></li>
+        </ul>
+      </div>
+      <div class="sidebar-footer">
+        <ul>
+          <li><i class="fas fa-thumbtack"></i> Pin location</li>
+          <li><i class="fas fa-thermometer-half"></i> Average Weekly Temperature</li>
+          <li><i class="fas fa-city"></i> Metro ▼</li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="weather-info">
+        <h2>Metro Pusat, Lampung, Indonesia</h2>
+        <p>09:45 AM</p>
+        <div class="weather-details">
+          <p class="temperature">25° C</p>
+          <p class="weather-condition">Dramatic Clouds</p>
+        </div>
+        <div class="chance-of-rain">
+          <p>Chance Of Rain</p>
+          <ul>
+            <li>8pm <span>32%</span></li>
+            <li>19pm <span>40%</span></li>
+            <li>12pm <span>48%</span></li>
+            <li>13pm <span>51%</span></li>
+          </ul>
+        </div>
+        <div class="sunrise-sunset">
+          <p>Sunrise & Sunset</p>
+          <ul>
+            <li>05:00 AM <span>11.71km²</span></li>
+            <li>05:00 PM <span>11.91km²</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
